@@ -1,0 +1,313 @@
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-dark: #011c44;
+  --color-brand-normal: #2b7fff;
+  --color-secondary-normal: #4a4a4a;
+  --color-secondary-dark: #000;
+  --color-copyright: #747272;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+address {
+  font-style: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.section-title {
+  margin-bottom: 40px;
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.section-title.centered {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* Button */
+.button {
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  background-color: var(--color-brand-normal);
+  border: 0;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+/* Link */
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--color-brand-normal);
+}
+.link-footer {
+  text-decoration: none;
+  color: var(--color-primary-light);
+}
+.link-footer:hover {
+  color: var(--color-brand-normal);
+}
+
+/* Header */
+.header {
+  background-color: lightgray; /* remove later */
+  font-size: 0; /* remove later */
+  line-height: 0; /* remove later */
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.header-icons {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 32px;
+}
+.header-icon {
+  fill: var(--color-primary-dark);
+}
+.header-icon:hover {
+  fill: var(--color-brand-normal);
+}
+
+/* Hero section */
+.hero-section {
+  padding: 125px 0;
+  background-image: url(../images/header-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-name {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.section-title.hero-title {
+  max-width: 529px;
+  color: var(--color-brand-normal);
+  font-size: 140px;
+  line-height: 0.8; /* Меньше 1 - проблем не будет? */
+}
+.hero-text-under-butoon {
+  margin: 14px 0 0 0;
+  color: var(--color-secondary-normal);
+  font-size: 12px;
+  line-height: 1.5;
+  width: 238px;
+  text-align: center;
+}
+
+/* About us section */
+.about-us-section {
+  padding-bottom: 128px;
+}
+.about-us-container {
+  display: flex;
+  gap: 28px;
+}
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 28px 200px 0;
+}
+.section-title.limited {
+  max-width: 530px;
+}
+.section-title.limited .accent {
+  color: var(--color-brand-normal);
+}
+.about-us-container-text {
+  margin: 0;
+  padding-top: 40px;
+}
+.about-us-container-text .brand {
+  font-weight: 600;
+}
+.about-us-container-text .capitalize {
+  text-transform: capitalize;
+}
+.about-us-image {
+  border-radius: 50%;
+}
+
+/* Advantages section */
+.container.limited {
+  max-width: 1060px;
+}
+.section-title.centered .accent {
+  color: var(--color-brand-normal);
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  color: var(--color-secondary-dark);
+  font-size: 18px;
+  line-height: 1.35;
+}
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 24px 32px;
+  /* background-image: #fff; */ /* Chrome said invalid */
+  border: 1px solid black; /* remove later */
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38); /* Fix with var later? */
+}
+.advantages-icon {
+  fill: var(--color-brand-normal);
+}
+
+/* Procedures section */
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+.procedures-card {
+  display: flex; /* Вроде как выровнял, а надо ли */
+  height: 456px;
+  align-items: end; /* Вроде как выровнял, а надо ли */
+  justify-content: center; /* Вроде как выровнял, а надо ли */
+  text-align: center; /* Вроде как выровнял, а надо ли */
+  padding: 32px 77px 32px 115px; /* Может через фомулу вывести как-то */
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
+  border: 1px solid black; /* remove later */
+  border-radius: 4px 120px;
+}
+.procedures-name {
+  color: var(--color-primary-light);
+  line-height: 1.2;
+}
+
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+.carousel-button:hover {
+  background-color: var(--color-brand-normal);
+  fill: var(--color-primary-light);
+}
+
+/* Contacts section */
+
+/* Footer section */
+.footer {
+  /* padding-top: 48px; */ /* Background color won't match */
+  background-color: var(--color-primary-dark);
+  font-size: 16px;
+  line-height: 1.2;
+}
+.address-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+.address-link:hover {
+  color: var(--color-brand-normal);
+}
+.footer-icon {
+  fill: var(--color-primary-light);
+}
+.footer-icon:hover {
+  fill: var(--color-brand-normal);
+}
+.address-copyright {
+  margin-bottom: 0; /* Это я от себя чисто */
+  color: var(--color-copyright);
+  font-size: 13px;
+}
