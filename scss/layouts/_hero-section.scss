@@ -1,0 +1,29 @@
+.hero-section {
+  padding-top: 122px;
+  padding-bottom: 166px;
+  background-image: url('../images/hero-background.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*   background-position: center;
+  background-size: cover; */
+  //СПРОСИТЬ У КАТИ
+
+  &__container {
+    padding-left: 106px;
+  }
+
+  &__name {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__text-under-button {
+    margin: 14px 0 0 0;
+    color: var(--color-secondary-normal);
+    font-size: 12px;
+    line-height: 1.5;
+    width: 238px;
+    text-align: center;
+  }
+}

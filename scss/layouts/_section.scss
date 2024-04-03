@@ -1,0 +1,23 @@
+.section {
+  padding: 48px 0;
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    &--centered {
+      margin-bottom: 48px;
+      text-align: center;
+    }
+  }
+
+  &__hero-title {
+    max-width: 529px;
+    color: var(--color-brand-normal);
+    font-size: 140px;
+    line-height: 0.8; // Меньше 1 - проблем не будет?
+  }
+}

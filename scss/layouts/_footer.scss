@@ -1,0 +1,66 @@
+.footer {
+  position: relative;
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-background.png');
+  background-size: cover;
+  background-position: center;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 56px 0;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 247px;
+    height: 152px;
+    bottom: 0;
+    right: 0;
+    background-image: url('../images/footer-background-cones-element.png');
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__list-item {
+    margin-bottom: 16px;
+  }
+
+  &__address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-brand-normal);
+    }
+  }
+
+  &__social-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__social-icon {
+    fill: var(--color-primary-light);
+
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 0; /* Это я от себя чисто */
+    color: var(--color-copyright);
+    font-size: 13px;
+  }
+}
