@@ -27,7 +27,7 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <address class="header__adress">
+          <address class="header__address">
             <ul class="header__icons">
               <li>
                 <a href="#">
@@ -54,6 +54,13 @@
               </li>
             </ul>
           </address>
+          <nav class="header__burger-menu">
+            <button class="header__burger-button menu-btn-open" type="button">
+              <svg class="header__burger-icon">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </nav>
         </div>
       </div>
     </header>
@@ -61,19 +68,22 @@
     <main>
       <!--                    Hero Section (1)                       -->
       <section class="hero-section">
-        <div class="container">
-          <div class="hero-section__container">
-            <p class="hero-section__name">Косметологічна клініка</p>
-            <h1 class="section__title section__hero-title">Beauty Zone</h1>
-            <button class="button" type="button">Замовити дзвінок</button>
-            <p class="hero-section__text-under-button">
-              Запишись та отримай безкоштовну консультацію нашого косметолога
-            </p>
+        <div class="hero-section__opacity">
+          <div class="container">
+            <div class="hero-section__container">
+              <p class="hero-section__name">Косметологічна клініка</p>
+              <h1 class="section__title section__hero-title">Beauty Zone</h1>
+              <button class="button" type="button">Замовити дзвінок</button>
+              <p class="hero-section__text-under-button">
+                Запишись та отримай безкоштовну консультацію нашого косметолога
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!--                  About Us Section (2)                     -->
-      <!--  <section class="about-us-section" id="about-us-section">
+      >
+      <section class="about-us-section" id="about-us-section">
         <div class="container">
           <div class="about-us-container">
             <div class="about-us-text">
@@ -93,6 +103,7 @@
               </p>
             </div>
             <div>
+              <!-- ИЛИ так просто пробовать поз релейтив или в дивы запихнуть -->
               <img
                 class="about-us-image"
                 src="./images/women-before-procedure.jpg"
@@ -106,7 +117,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!--                  Advantages Section (3)                     -->
       <!--  <section class="section" id="advantages-section">
         <div class="container limited">
@@ -218,24 +229,29 @@
           </nav>
           <nav class="footer__nav">
             <ul>
-              <li>
+              <li class="footer__nav-item">
                 <a class="link__footer" href="#about-us-section">Про нас</a>
               </li>
-              <li>
+              <li class="footer__nav-item">
                 <a class="link__footer" href="#advantages-section">Чому ми</a>
               </li>
-              <li>
+              <li class="footer__nav-item">
                 <a class="link__footer" href="#procedures-section">
                   Наші процедури
                 </a>
               </li>
-              <li>
+              <li class="footer__nav-item">
                 <a class="link__footer" href="#contacts-section">Контакти</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link__footer--mobile" href="#" target="_blank">
+                  Політика конфіденційності
+                </a>
               </li>
             </ul>
           </nav>
           <address class="footer__adress">
-            <ul>
+            <ul class="footer__desktop-address-list">
               <li class="footer__list-item">
                 <a class="footer__address-link" href="tel:+380960000007">
                   + 38 (096) 000 00 07
@@ -264,7 +280,7 @@
                 href="https://youtu.be/dQw4w9WgXcQ?si=0bV_-rpml-tgyWSk"
                 target="_blank"
               >
-                <svg class="footer__social-icon" width="42" height="42">
+                <svg class="footer__social-icon">
                   <use href="./images/icons.svg#icon-telephone-receiver"></use>
                 </svg>
               </a>
@@ -272,7 +288,7 @@
                 href="https://youtu.be/dQw4w9WgXcQ?si=0bV_-rpml-tgyWSk"
                 target="_blank"
               >
-                <svg class="footer__social-icon" width="42" height="42">
+                <svg class="footer__social-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -280,14 +296,14 @@
                 href="https://youtu.be/dQw4w9WgXcQ?si=0bV_-rpml-tgyWSk"
                 target="_blank"
               >
-                <svg class="footer__social-icon" width="42" height="42">
+                <svg class="footer__social-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </div>
           </address>
           <address class="footer__adress">
-            <a class="link__footer" href="#" target="_blank">
+            <a class="link__footer--desktop" href="#" target="_blank">
               Політика конфіденційності
             </a>
             <p class="footer__copyright">&copy; 2022 Дані захищені</p>

@@ -2,22 +2,39 @@
   padding: 48px 0;
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     font-family: 'Play', sans-serif;
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
 
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 40px;
+      font-size: 64px;
+    }
+
     &--centered {
-      margin-bottom: 48px;
       text-align: center;
+
+      @media screen and (min-width: $bp-desktop) {
+        margin-bottom: 48px;
+      }
     }
   }
 
   &__hero-title {
-    max-width: 529px;
+    margin-bottom: 32px;
     color: var(--color-brand-normal);
-    font-size: 140px;
-    line-height: 0.8; // Меньше 1 - проблем не будет?
+    font-size: 54px;
+    line-height: 0.85;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 40px;
+      max-width: 529px;
+      font-size: 140px;
+      line-height: 0.8;
+      text-align: start;
+    }
   }
 }

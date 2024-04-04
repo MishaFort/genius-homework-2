@@ -11,12 +11,40 @@
 
   &__footer {
     color: var(--color-primary-light);
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     margin-bottom: 16px;
+    text-align: center;
 
     &:hover {
       color: var(--color-brand-normal);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 16px;
+    }
+
+    &--mobile {
+      color: var(--color-primary-light);
+      font-size: 14px;
+      text-decoration: none;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        color: var(--color-primary-light);
+        font-size: 16px;
+        text-decoration: none;
+        margin-bottom: 16px;
+      }
     }
   }
 }

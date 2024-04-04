@@ -1,29 +1,80 @@
 .hero-section {
-  padding-top: 122px;
-  padding-bottom: 166px;
-  background-image: url('../images/hero-background.png');
-  background-position: top center;
+  padding-top: 71px;
+  padding-bottom: 56px;
+  background-image: url('../images/hero-background-mobile.png');
+  background-position: top;
+  background-size: cover;
   background-repeat: no-repeat;
-  /*   background-position: center;
-  background-size: cover; */
   //СПРОСИТЬ У КАТИ
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero-background-mobile@2x.png');
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 122px;
+    padding-bottom: 166px;
+    background-image: url('../images/hero-background.png');
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-background@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 122px;
+    padding-bottom: 166px;
+    background-image: url('../images/hero-background.png');
+    background-position: top;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-background@2x.png');
+    }
+  }
+
   &__container {
-    padding-left: 106px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      padding-left: 106px;
+    }
   }
 
   &__name {
-    margin-bottom: 16px;
-    font-size: 18px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 1.2;
+      text-align: start;
+    }
   }
 
   &__text-under-button {
-    margin: 14px 0 0 0;
+    margin: 8px auto 0;
     color: var(--color-secondary-normal);
-    font-size: 12px;
-    line-height: 1.5;
-    width: 238px;
+    font-size: 11px;
+    line-height: 1.65;
+    max-width: 238px;
     text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 14px 0 0 0;
+      font-size: 12px;
+      line-height: 1.5;
+    }
   }
 }
