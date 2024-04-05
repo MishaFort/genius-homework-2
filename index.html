@@ -82,35 +82,41 @@
         </div>
       </section>
       <!--                  About Us Section (2)                     -->
-      >
       <section class="about-us-section" id="about-us-section">
         <div class="container">
-          <div class="about-us-container">
-            <div class="about-us-text">
-              <h2 class="section-title limited">
+          <div class="about-us-section__container">
+            <div class="about-us-section__text-part">
+              <h2 class="section__title section__title--limited">
                 Перевтілюйтесь в
-                <span class="accent">Beauty Zone!</span>
+                <span class="section__title--accented"> Beauty Zone! </span>
               </h2>
-              <p class="about-us-container-text">
+              <p class="about-us-section__text">
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
-              <p class="about-us-container-text">
-                B <span class="brand capitalize">beauty zone</span> ми
-                гарантуємо найвищі стандарти якості та приємний сервіс. Наші
-                косметологічні процедури та препарати допоможуть вам
-                підтримувати свою красу та молодість. З нами краса назавжди!
+              <p class="about-us-section__text">
+                B <span class="brand-name">beauty zone</span> ми гарантуємо
+                найвищі стандарти якості та приємний сервіс. Наші косметологічні
+                процедури та препарати допоможуть вам підтримувати свою красу та
+                молодість. <br />З нами краса назавжди!
               </p>
             </div>
-            <div>
-              <!-- ИЛИ так просто пробовать поз релейтив или в дивы запихнуть -->
+            <div class="about-us-section__images-part">
               <img
-                class="about-us-image"
+                class="about-us-section__image-before"
+                srcset="
+                  ./images/women-before-procedure.jpg    1x,
+                  ./images/women-before-procedure@2x.jpg 2x
+                "
                 src="./images/women-before-procedure.jpg"
                 alt="Пацієнт перед операцією"
               />
               <img
-                class="about-us-image"
+                class="about-us-section__image-after"
+                srcset="
+                  ./images/women-after-procedure.jpg    1x,
+                  ./images/women-after-procedure@2x.jpg 2x
+                "
                 src="./images/women-after-procedure.jpg"
                 alt="Пацієнт після операції"
               />

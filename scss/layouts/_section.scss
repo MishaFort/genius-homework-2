@@ -20,6 +20,18 @@
         margin-bottom: 48px;
       }
     }
+
+    &--accented {
+      color: var(--color-brand-normal);
+    }
+
+    &--limited {
+      max-width: 264px;
+
+      @media screen and (min-width: $bp-desktop) {
+        max-width: 530px;
+      }
+    }
   }
 
   &__hero-title {

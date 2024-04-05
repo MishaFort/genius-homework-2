@@ -3,37 +3,6 @@
 /* Hero section */
 
 /* About us section */
-.about-us-section {
-  padding-bottom: 128px;
-}
-.about-us-container {
-  display: flex;
-  gap: 28px;
-}
-.about-us-text {
-  display: flex;
-  flex-direction: column;
-  margin: 40px 28px 200px 0;
-}
-.section-title.limited {
-  max-width: 530px;
-}
-.section-title.limited .accent {
-  color: var(--color-brand-normal);
-}
-.about-us-container-text {
-  margin: 0;
-  padding-top: 40px;
-}
-.about-us-container-text .brand {
-  font-weight: 600;
-}
-.about-us-container-text .capitalize {
-  text-transform: capitalize;
-}
-.about-us-image {
-  border-radius: 50%;
-}
 
 /* Advantages section */
 .container.limited {

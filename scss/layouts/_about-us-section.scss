@@ -1,0 +1,74 @@
+.about-us-section {
+  padding-top: 16px;
+  padding-bottom: 88px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 335px;
+  }
+
+  &__container {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 40px;
+      bottom: -46px;
+      right: -2px;
+      background-image: url('../images/about-us-section-background-star-mobile.svg');
+
+      @media screen and (min-width: $bp-desktop) {
+        top: -8px;
+        right: -26px;
+        width: 409px;
+        height: 391px;
+        background-image: url('../images/about-us-section-background.svg');
+      }
+    }
+  }
+
+  &__text-part {
+    max-width: 670px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__images-part {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__image-before {
+    position: absolute;
+    top: -40px;
+    right: 172px;
+    border-radius: 50%;
+  }
+
+  &__image-after {
+    position: absolute;
+    bottom: -160px;
+    right: 0;
+    border-radius: 50%;
+  }
+}

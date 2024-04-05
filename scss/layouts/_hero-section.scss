@@ -1,11 +1,11 @@
 .hero-section {
   padding-top: 71px;
-  padding-bottom: 56px;
+  padding-bottom: 40px;
   background-image: url('../images/hero-background-mobile.png');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  //СПРОСИТЬ У КАТИ
+  //СПРОСИТЬ У КАТИ - если ковер, то надо падинг в КАЛЬК
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),

@@ -3,9 +3,11 @@
 @import './utils/variables';
 @import './base';
 
+@import './components/brand-name';
 @import './components/buttons';
 @import './components/links';
 
+@import './layouts/about-us-section';
 @import './layouts/container';
 @import './layouts/footer';
 @import './layouts/header';
