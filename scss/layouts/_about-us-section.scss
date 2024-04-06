@@ -1,13 +1,13 @@
 .about-us-section {
   padding-top: 16px;
-  padding-bottom: 88px;
+  padding-bottom: 14px;
 
   @media screen and (min-width: $bp-tablet) {
     padding-top: 0;
   }
 
   @media screen and (min-width: $bp-desktop) {
-    padding-bottom: 335px;
+    padding-bottom: 135px;
   }
 
   &__container {

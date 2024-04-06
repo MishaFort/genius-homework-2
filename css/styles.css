@@ -5,35 +5,6 @@
 /* About us section */
 
 /* Advantages section */
-.container.limited {
-  max-width: 1060px;
-}
-.section-title.centered .accent {
-  color: var(--color-brand-normal);
-}
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  color: var(--color-secondary-dark);
-  font-size: 18px;
-  line-height: 1.35;
-}
-.advantages-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  text-align: center;
-  padding: 24px 32px;
-  /* background-image: #fff; */ /* Chrome said invalid */
-  border: 1px solid black; /* remove later */
-  border-radius: 32px;
-  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38); /* Fix with var later? */
-}
-.advantages-icon {
-  fill: var(--color-brand-normal);
-}
 
 /* Procedures section */
 .procedures-list {

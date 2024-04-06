@@ -7,4 +7,8 @@
   @media screen and (min-width: $bp-tablet) {
     padding: 0 24px;
   }
+
+  &--limited {
+    max-width: 1108px;
+  }
 }
