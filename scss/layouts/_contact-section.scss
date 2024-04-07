@@ -68,6 +68,10 @@
   &__button {
     display: block;
     margin: 0 auto 8px;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
   }
 
   &__form-field {

@@ -31,7 +31,7 @@
             </ul>
           </nav>
           <address class="header__address">
-            <button class="button" type="button">
+            <button class="button modal-btn-open" type="button">
               <svg class="header__icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-telephone-receiver"></use>
               </svg>
@@ -478,9 +478,88 @@
         </div>
       </div>
     </footer>
+    <!--                    Modal window                      -->
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <div class="modal__form-container">
+          <p class="modal__text">
+            Запишіться
+            <span class="modal__text--accented">безкоштовно</span>
+            та отримайте подарунок
+          </p>
+          <form name="modal-form" autocomplete="off" novalidate>
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-name">
+                Ваше ім'я та прізвище
+              </label>
+              <input
+                class="input__control"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Ваше ім'я та прізвище"
+                pattern="^[A-Za-z]+\s[A-Za-z]+$"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+            </div>
+
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-tel">
+                Ваш номер телефону
+              </label>
+              <input
+                class="input__control"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Ваш номер телефону"
+                pattern="^\+380+[0-9]{9}"
+                minlength="13"
+                maxlength="13"
+                required
+              />
+            </div>
+
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-email">
+                Ваша електронна пошта
+              </label>
+              <input
+                class="input__control"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Ваша електронна пошта"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+            </div>
+
+            <button class="modal__button button" type="submit">
+              Записатись безкоштовно
+            </button>
+            <p class="form-terms">
+              Натискаючи на кнопку я погоджуюсь з
+              <a class="form-terms__link" href="#">
+                політикою конфіденційності
+              </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script src="./js/modal.js"></script>
     <script src="./js/procedures-slider.js"></script>
   </body>
 </html>
