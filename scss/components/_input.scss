@@ -1,0 +1,30 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+  }
+
+  &__control {
+    padding: 16px 30px;
+    width: 100%;
+    color: var(--color-primary-light);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 1.17;
+    border: 2px solid var(--color-gray);
+    border-radius: 32px;
+    background-color: transparent;
+
+    &:focus {
+      background-color: var(--color-gray);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-light);
+    }
+  }
+}

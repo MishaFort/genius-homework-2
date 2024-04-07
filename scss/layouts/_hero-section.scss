@@ -31,13 +31,17 @@
     padding-bottom: 166px;
     background-image: url('../images/hero-background.png');
     background-position: top;
-    background-size: contain;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/hero-background@2x.png');
     }
+  }
+
+  @media screen and (min-width: $bp-max) {
+    margin-left: calc((100vw - 1440px) / 2);
+    margin-right: calc((100vw - 1440px) / 2);
   }
 
   &__container {

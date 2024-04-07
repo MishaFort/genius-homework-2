@@ -50,8 +50,14 @@
     display: none;
 
     @media screen and (min-width: $bp-desktop) {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 32px;
     }
+  }
+
+  &__href {
+    max-height: 32px;
   }
 
   &__icons {

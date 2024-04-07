@@ -1,6 +1,6 @@
 .advantages-section {
   padding-top: 90px;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
   background-image: url('../images/advantages-section-background-mobile.svg');
   background-position: top;
   //background-size: cover;
@@ -10,7 +10,7 @@
   @media screen and (min-width: $bp-desktop) {
     padding-top: 200px;
     background-image: url('../images/advantages-section-background.svg');
-    padding-bottom: 96px;
+    padding-bottom: 80px;
   }
 
   @media screen and (min-width: $bp-max) {
