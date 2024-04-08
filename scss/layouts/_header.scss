@@ -3,12 +3,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  /* background: #ffffff40; */
-  /*  background-color: lightgray; /* remove later */
   padding-top: 16px;
+  overflow: hidden;
 
   @media screen and (min-width: $bp-desktop) {
     padding: 32px 0;
+    background: #ffffff40;
+    backdrop-filter: blur(5px);
   }
 
   &__container {
@@ -56,14 +57,16 @@
     }
   }
 
-  &__href {
+  &__button {
+    padding: 0;
     max-height: 32px;
+    background-color: transparent;
+    border: 0;
   }
 
-  &__icons {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  &__href {
+    max-height: 32px;
+    text-decoration: none;
   }
 
   &__icon {

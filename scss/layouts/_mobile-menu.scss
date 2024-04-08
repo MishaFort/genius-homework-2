@@ -1,0 +1,94 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 16px 20px;
+  background-color: var(--color-primary-light);
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 0.2s;
+  z-index: 2;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 24px 40px;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__btn-close-icon {
+    width: 24px;
+    height: 24px;
+    padding: 6px 3px 6px 9px;
+    fill: var(--color-primary-dark);
+    stroke: var(--color-primary-dark);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 40px;
+      height: 40px;
+      stroke-width: 1.5px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 0 16px;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    max-height: 32px;
+    background-color: transparent;
+    border: 0;
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+  }
+
+  &__href {
+    max-height: 34px;
+    text-decoration: none;
+  }
+
+  &__icon {
+    fill: var(--color-primary-dark);
+
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+  }
+}

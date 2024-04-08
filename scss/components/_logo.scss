@@ -1,0 +1,23 @@
+.logo {
+  max-width: 74px;
+  color: var(--color-brand-normal);
+  font-family: 'play', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.95;
+  text-decoration: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 22px;
+  }
+
+  &__footer {
+    max-width: 57px;
+    font-size: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 83px;
+      font-size: 24px;
+    }
+  }
+}

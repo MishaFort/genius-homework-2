@@ -16,9 +16,7 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="/">
-              <img src="./images/logo.svg" alt="Логотип 'Beauty Zone'" />
-            </a>
+            <a class="logo" href="/"> Beauty Zone </a>
             <ul class="header__menu">
               <li><a class="link" href="#about-us-section">Про нас</a></li>
               <li>
@@ -31,7 +29,7 @@
             </ul>
           </nav>
           <address class="header__address">
-            <button class="button modal-btn-open" type="button">
+            <button class="button header__button modal-btn-open" type="button">
               <svg class="header__icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-telephone-receiver"></use>
               </svg>
@@ -54,6 +52,64 @@
               </svg>
             </button>
           </nav>
+          <!--                        Mobile menu                           -->
+          <div class="mobile-menu">
+            <nav class="mobile-menu__header">
+              <a class="logo" href="/"> Beauty Zone </a>
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                <svg class="mobile-menu__btn-close-icon">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </nav>
+            <nav>
+              <ul class="mobile-menu__menu">
+                <li>
+                  <a class="link mobile-menu-link" href="#about-us-section">
+                    Про нас
+                  </a>
+                </li>
+                <li>
+                  <a class="link mobile-menu-link" href="#advantages-section">
+                    Чому ми
+                  </a>
+                </li>
+                <li>
+                  <a class="link mobile-menu-link" href="#procedures-section">
+                    Наші процедури
+                  </a>
+                </li>
+                <li>
+                  <a class="link mobile-menu-link" href="#contact-section">
+                    Контакти
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <address class="mobile-menu__address">
+              <button
+                class="button mobile-menu__button modal-btn-open-mobile-menu mobile-menu-link"
+                type="button"
+              >
+                <svg class="mobile-menu__icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-telephone-receiver"></use>
+                </svg>
+              </button>
+              <a class="mobile-menu__href" href="#">
+                <svg class="mobile-menu__icon" width="32" height="34">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="mobile-menu__href" href="#">
+                <svg class="mobile-menu__icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </address>
+          </div>
         </div>
       </div>
     </header>
@@ -67,7 +123,9 @@
             <div class="hero-section__container">
               <p class="hero-section__name">Косметологічна клініка</p>
               <h1 class="section__title section__hero-title">Beauty Zone</h1>
-              <button class="button" type="button">Замовити дзвінок</button>
+              <button class="button modal-btn-open-hero" type="button">
+                Замовити дзвінок
+              </button>
               <p class="hero-section__text-under-button">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
@@ -119,9 +177,7 @@
         </div>
       </section>
       <!--                  Advantages Section (3)                     -->
-      <!--              Иконки или просто картинки свг?                -->
       <!--                 Бэкграунд в пнг попробуй                    -->
-      <!--                   Max-width for cards                       -->
       <!--                ДЯДЯ ШО С ПАДИНГОМ СВЕРХУ?                   -->
       <!--            мейби перенести секцию в фигме вниз              -->
       <section class="advantages-section" id="advantages-section">
@@ -133,27 +189,33 @@
           </h2>
           <ul class="advantages-section__list">
             <li class="advantages-section__item">
-              <svg class="advantages-section__icon" width="48" height="48">
-                <use href="./images/icons.svg#icon-advantages-1"></use>
-              </svg>
+              <img
+                class="advantages-section__image"
+                src="./images/advantages-education.svg"
+                alt="Education advantage"
+              />
               <p class="advantages-section__text">
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
                 від 5 років
               </p>
             </li>
             <li class="advantages-section__item">
-              <svg class="advantages-section__icon" width="48" height="48">
-                <use href="./images/icons.svg#icon-advantages-2"></use>
-              </svg>
+              <img
+                class="advantages-section__image"
+                src="./images/advantages-equipment.svg"
+                alt="Equipment advantage"
+              />
               <p class="advantages-section__text">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
             </li>
             <li class="advantages-section__item">
-              <svg class="advantages-section__icon" width="48" height="48">
-                <use href="./images/icons.svg#icon-advantages-3"></use>
-              </svg>
+              <img
+                class="advantages-section__image"
+                src="./images/advantages-purpose.svg"
+                alt="Purpose advantage"
+              />
               <p class="advantages-section__text">
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
@@ -296,7 +358,7 @@
         </div>
       </section>
       <!--                  Contact Section (5)                     -->
-      <section class="contact-section" id="contacts-section">
+      <section class="contact-section" id="contact-section">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Як нас <span class="section__title--accented">знайти</span>
@@ -319,7 +381,7 @@
                 та отримайте подарунок
               </p>
               <!--                    form                          -->
-              <form name="contact-form" autocomplete="off" novalidate>
+              <form name="contact-form" autocomplete="off">
                 <div class="contact-section__form-field input">
                   <label class="input__label visually-hidden" for="user-name">
                     Ваше ім'я та прізвище
@@ -390,9 +452,7 @@
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
-            <a href="#">
-              <img src="./images/logo.svg" alt="Логотип 'Beauty Zone'" />
-            </a>
+            <a class="logo logo__footer" href="/"> Beauty Zone </a>
           </nav>
           <nav class="footer__nav">
             <ul>
@@ -493,7 +553,7 @@
             <span class="modal__text--accented">безкоштовно</span>
             та отримайте подарунок
           </p>
-          <form name="modal-form" autocomplete="off" novalidate>
+          <form name="modal-form" autocomplete="off">
             <div class="modal__form-field input">
               <label class="input__label visually-hidden" for="user-name">
                 Ваше ім'я та прізвище
@@ -519,7 +579,7 @@
                 class="input__control"
                 type="tel"
                 name="user-tel"
-                id="user-tel"
+                id="user-tel-modal"
                 placeholder="Ваш номер телефону"
                 pattern="^\+380+[0-9]{9}"
                 minlength="13"
@@ -559,7 +619,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/procedures-slider.js"></script>
+    <script src="./js/telephone-pattern.js"></script>
   </body>
 </html>
