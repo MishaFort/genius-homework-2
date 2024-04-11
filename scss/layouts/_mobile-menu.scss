@@ -29,10 +29,10 @@
   &__btn-close {
     background-color: transparent;
     border: none;
-    cursor: pointer;
     padding: 0;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 
     @media screen and (min-width: $bp-tablet) {
       width: 40px;
@@ -86,6 +86,7 @@
 
   &__icon {
     fill: var(--color-primary-dark);
+    transition: fill 0.2s;
 
     &:hover {
       fill: var(--color-brand-normal);

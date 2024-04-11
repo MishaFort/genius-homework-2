@@ -1,16 +1,22 @@
 .advantages-section {
+  position: relative;
   padding-top: 90px;
   padding-bottom: 24px;
   background-image: url('../images/advantages-section-background-mobile.svg');
   background-position: top;
-  //background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  //ВЕСЬ БЭКГРАУНД СКАЧАТЬ ПОПРОБОВАТЬ
+  background: linear-gradient(
+    38.2deg,
+    rgba(43, 127, 255, 0.2) 39.74%,
+    rgba(43, 127, 255, 0) 54.16%,
+    rgba(43, 127, 255, 0) 66.66%
+  );
 
   @media screen and (min-width: $bp-desktop) {
     padding-top: 200px;
     background-image: url('../images/advantages-section-background.svg');
-    padding-bottom: 80px;
+    padding-bottom: 96px;
   }
 
   @media screen and (min-width: $bp-max) {
@@ -44,6 +50,11 @@
     background-color: var(--color-primary-light);
     border-radius: 32px;
     box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38); /* Fix with var later? */
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__image {
