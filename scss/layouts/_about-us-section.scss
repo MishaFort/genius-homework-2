@@ -12,24 +12,6 @@
 
   &__container {
     position: relative;
-
-    &::after {
-      position: absolute;
-      content: '';
-      width: 40px;
-      height: 40px;
-      bottom: -46px;
-      right: -2px;
-      background-image: url('../images/about-us-section-background-star-mobile.svg');
-
-      @media screen and (min-width: $bp-desktop) {
-        top: -8px;
-        right: -26px;
-        width: 409px;
-        height: 391px;
-        background-image: url('../images/about-us-section-background.svg');
-      }
-    }
   }
 
   &__text-part {
@@ -63,12 +45,78 @@
     top: -40px;
     right: 172px;
     border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px var(--color-shadow);
   }
 
   &__image-after {
     position: absolute;
-    bottom: -160px;
+    top: 327px;
     right: 0;
     border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px var(--color-shadow);
+  }
+
+  &__background-star {
+    position: absolute;
+    animation: spin-scale-1 12s 2s infinite linear;
+
+    &:hover,
+    &:hover ~ & {
+      animation-play-state: paused;
+    }
+
+    @keyframes spin-scale-1 {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        scale: 1.5;
+      }
+      50% {
+        scale: 1;
+      }
+      75% {
+        scale: 1.5;
+      }
+      100% {
+        scale: 1;
+        transform: rotate(360deg);
+      }
+    }
+
+    &:first-child {
+      bottom: -41px;
+      right: 1px;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 56px;
+        height: 56px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        top: 316px;
+        right: 314px;
+      }
+    }
+
+    &:nth-child(2) {
+      display: none;
+      top: 4px;
+      right: -14px;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+      }
+    }
+
+    &:nth-child(3) {
+      display: none;
+      top: 232px;
+      right: 8px;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+      }
+    }
   }
 }
